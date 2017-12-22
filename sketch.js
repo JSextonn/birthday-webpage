@@ -30,8 +30,8 @@ function draw() {
 }
 
 function mouseClicked() {
-    explosion = new ConfettiExplosion(mouseX, mouseY);
-    explosion.packConfetti(100, 3);
+    let explosion = new ConfettiExplosion(mouseX, mouseY);
+    explosion.packConfetti(1000, CONFETTI_SIZE);
     confettiExplosions.push(explosion);
 }
 
@@ -65,7 +65,7 @@ class CanvasEntity {
 }
 
 class Balloon extends CanvasEntity {
-    constructor(location, color, size = 75, hasString = true) {
+    constructor(location, color, size = 100, hasString = true) {
         super(location);
         this.color = color;
         this.size = size;
@@ -163,7 +163,9 @@ class ConfettiParticle extends CanvasEntity {
     update() {
         this.velocity.add(this.acceleration);
         this.location.add(this.velocity);
-        this.velocity.mult(0.95);
+
+        // Simulates Friction
+        this.velocity.mult(1);
         this.acceleration.mult(0);
         this.lifespan -= this.decay;
     }
