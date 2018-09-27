@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/JSextonn/birthday-webpage/issues"
   },
-  "homepage": "https://github.com/JSextonn/birthday-webpage#readme"
+  "homepage": "https://github.com/JSextonn/birthday-webpage#readme",
+  "dependencies": {
+    "p5": "^0.7.2"
+  }
 }
