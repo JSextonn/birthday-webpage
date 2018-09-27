@@ -1,0 +1,19 @@
+{
+  "name": "birthday-webpage",
+  "version": "1.0.0",
+  "description": "Webpage with real time physics designed to grant someone a happy birthday.",
+  "main": "sketch.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JSextonn/birthday-webpage.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JSextonn/birthday-webpage/issues"
+  },
+  "homepage": "https://github.com/JSextonn/birthday-webpage#readme"
+}
